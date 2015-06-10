@@ -1,0 +1,8 @@
+applications:
+- name: YOURNAME-liberty-swagger2
+  disk_quota: 512M
+  instances: 1
+  path: build/libs/liberty-swagger2-0.0.1.war
+  memory: 512M
+  env:
+    JBP_CONFIG_LIBERTY: "app_archive: {features: [servlet-3.1, jsp-2.2, websocket-1.1]}"
